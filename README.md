@@ -4,6 +4,7 @@ Ruby on Rails web application for displaying the BRL (real, brazilian money) quo
 ## Setup in development
 - clone the project
 - run `bundle install`
+- run `rails db:create`
 - cd to project folder and run `rails s`
 
 ### Run test
