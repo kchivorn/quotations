@@ -1,7 +1,51 @@
 <h1>Currency Exchange Rate</h1>
 
 <div class="row">
+    <%= form_tag api_quotes_path(@base), remote: true do %>
+    <div class="row m-1 date-range">
+      <div class="col-lg-1 col-md-1 date-label">
+        <label for="start_date">Start date</label>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <div class="input-group">
+          <input type="date" class="actual_range form-control" value="<%= @start_date %>" id="start_date" name="start_date">
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-th"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-1 col-md-1 date-label">
+        <label for="end_date">End date</label>
+      </div>
+
+      <div class="col-lg-3 col-md-3">
+        <div class="input-group">
+          <input type="date" class="actual_range form-control" value="<%= @end_date %>" id="end_date" name="end_date">
+          <div class="input-group-addon">
+            <span class="glyphicon glyphicon-th"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="col-sm-12 col-md-12">
       <%= render 'graph' %>
     </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-1">
+      <%= submit_tag 'EUR', id: 'EUR', class: 'symbols btn btn-primary' %>
+      </div>
+
+      <div class="col-md-1">
+        <%= submit_tag 'USD', id: 'USD', class: 'symbols btn btn-primary' %>
+      </div>
+
+      <div class="col-md-1">
+        <%= submit_tag 'AUD', id: 'AUD', class: 'symbols btn btn-primary' %>
+      </div>
+    </div>
+  <% end %>
 </div>

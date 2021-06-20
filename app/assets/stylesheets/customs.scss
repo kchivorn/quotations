@@ -1,3 +1,16 @@
-.container {
+@import "bootstrap/scss/bootstrap";
+
+h1 {
   text-align: center;
+  margin-bottom: 40px;
+}
+
+.date-label {
+  text-align: right;
+  padding-right: 0;
+  padding-top: 5px;
+}
+
+#graph {
+  margin-top: 30px;
 }
