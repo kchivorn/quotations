@@ -16,4 +16,16 @@ RSpec.describe Api::QuotesController do
       expect(response.content_type).to eq 'application/json; charset=utf-8'
     end
   end
+
+  describe 'POST create' do
+    it 'responds to custom format when it is set in the params' do
+      post :create,
+           params: { start_date: '2021-06-13',
+                     end_date: '2021-06-20',
+                     base: 'USD' }
+
+      expect(response.status).to eq(200)
+      expect(response.media_type).to eq 'text/javascript'
+    end
+  end
 end
