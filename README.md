@@ -1,24 +1,12 @@
-# README
+# Ruby on Rails web application for displaying the BRL (real, brazilian money) quotation versus euro (EUR), dollar (USD) and australian dollar (AUD), as a graph
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup in development
+- clone the project
+- run `bundle install`
+- cd to project folder and run `rails s`
 
-Things you may want to cover:
+### Run test
+run all test `rspec .`
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Demo on Heroku
+https://afternoon-thicket-82208.herokuapp.com/
