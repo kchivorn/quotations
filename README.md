@@ -1,4 +1,5 @@
-# Ruby on Rails web application for displaying the BRL (real, brazilian money) quotation versus euro (EUR), dollar (USD) and australian dollar (AUD), as a graph
+# Exchange Rate App
+Ruby on Rails web application for displaying the BRL (real, brazilian money) quotation versus euro (EUR), dollar (USD) and australian dollar (AUD), as a graph
 
 ## Setup in development
 - clone the project
